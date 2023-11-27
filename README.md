@@ -16,6 +16,250 @@ HoYo UWP ，给你更快乐的一站式哈游宇宙门户体验！
 
 - 游戏启动界面经过大幅简化，更适合聚合式体质（啥啊）
 
+## 文档树
+
+HoYoUWP
+│  .gitattributes
+│  .gitignore
+│  App.xaml
+│  App.xaml.cs
+│  HoYoUWP.csproj
+│  HoYoUWP.csproj.user
+│  HoYoUWP.sln
+│  MainPage.xaml
+│  MainPage.xaml.cs
+│  Package.appxmanifest
+│  README.md
+│
+├─Assets
+│      LargeTile.scale-100.png
+│      LargeTile.scale-125.png
+│      LargeTile.scale-150.png
+│      LargeTile.scale-200.png
+│      LargeTile.scale-400.png
+│      LockScreenLogo.scale-200.png
+│      SmallTile.scale-100.png
+│      SmallTile.scale-125.png
+│      SmallTile.scale-150.png
+│      SmallTile.scale-200.png
+│      SmallTile.scale-400.png
+│      SplashScreen.scale-100.png
+│      SplashScreen.scale-125.png
+│      SplashScreen.scale-150.png
+│      SplashScreen.scale-200.png
+│      SplashScreen.scale-400.png
+│      Square150x150Logo.scale-100.png
+│      Square150x150Logo.scale-125.png
+│      Square150x150Logo.scale-150.png
+│      Square150x150Logo.scale-200.png
+│      Square150x150Logo.scale-400.png
+│      Square44x44Logo.altform-lightunplated_targetsize-16.png
+│      Square44x44Logo.altform-lightunplated_targetsize-24.png
+│      Square44x44Logo.altform-lightunplated_targetsize-256.png
+│      Square44x44Logo.altform-lightunplated_targetsize-32.png
+│      Square44x44Logo.altform-lightunplated_targetsize-48.png
+│      Square44x44Logo.altform-unplated_targetsize-16.png
+│      Square44x44Logo.altform-unplated_targetsize-256.png
+│      Square44x44Logo.altform-unplated_targetsize-32.png
+│      Square44x44Logo.altform-unplated_targetsize-48.png
+│      Square44x44Logo.scale-100.png
+│      Square44x44Logo.scale-125.png
+│      Square44x44Logo.scale-150.png
+│      Square44x44Logo.scale-200.png
+│      Square44x44Logo.scale-400.png
+│      Square44x44Logo.targetsize-16.png
+│      Square44x44Logo.targetsize-24.png
+│      Square44x44Logo.targetsize-24_altform-unplated.png
+│      Square44x44Logo.targetsize-256.png
+│      Square44x44Logo.targetsize-32.png
+│      Square44x44Logo.targetsize-48.png
+│      StoreLogo.backup.png
+│      StoreLogo.scale-100.png
+│      StoreLogo.scale-125.png
+│      StoreLogo.scale-150.png
+│      StoreLogo.scale-200.png
+│      StoreLogo.scale-400.png
+│      Wide310x150Logo.scale-100.png
+│      Wide310x150Logo.scale-125.png
+│      Wide310x150Logo.scale-150.png
+│      Wide310x150Logo.scale-200.png
+│      Wide310x150Logo.scale-400.png
+│
+├─bin
+│  ├─ARM
+│  │  ├─Debug
+│  │  └─Release
+│  ├─ARM64
+│  │  ├─Debug
+│  │  └─Release
+│  ├─x64
+│  │  ├─Debug
+│  │  └─Release
+│  └─x86
+│      ├─Debug
+│      │  │  App.xbf
+│      │  │  AppxManifest.xml
+│      │  │  HoYoUWP.build.appxrecipe
+│      │  │  HoYoUWP.exe
+│      │  │  HoYoUWP.pdb
+│      │  │  HoYoUWP.xr.xml
+│      │  │  MainPage.xbf
+│      │  │  Microsoft.UI.Xaml.Markup.winmd
+│      │  │  resources.pri
+│      │  │  System.Runtime.dll
+│      │  │
+│      │  ├─AppX
+│      │  │  │  App.xbf
+│      │  │  │  AppxManifest.xml
+│      │  │  │  HoYoUWP.exe
+│      │  │  │  HoYoUWP.xr.xml
+│      │  │  │  MainPage.xbf
+│      │  │  │  Microsoft.UI.Xaml.Markup.winmd
+│      │  │  │  resources.pri
+│      │  │  │  System.Runtime.dll
+│      │  │  │  vs.appxrecipe
+│      │  │  │
+│      │  │  ├─Assets
+│      │  │  │      LargeTile.scale-100.png
+│      │  │  │      LargeTile.scale-125.png
+│      │  │  │      LargeTile.scale-150.png
+│      │  │  │      LargeTile.scale-200.png
+│      │  │  │      LargeTile.scale-400.png
+│      │  │  │      LockScreenLogo.scale-200.png
+│      │  │  │      SmallTile.scale-100.png
+│      │  │  │      SmallTile.scale-125.png
+│      │  │  │      SmallTile.scale-150.png
+│      │  │  │      SmallTile.scale-200.png
+│      │  │  │      SmallTile.scale-400.png
+│      │  │  │      SplashScreen.scale-100.png
+│      │  │  │      SplashScreen.scale-125.png
+│      │  │  │      SplashScreen.scale-150.png
+│      │  │  │      SplashScreen.scale-200.png
+│      │  │  │      SplashScreen.scale-400.png
+│      │  │  │      Square150x150Logo.scale-100.png
+│      │  │  │      Square150x150Logo.scale-125.png
+│      │  │  │      Square150x150Logo.scale-150.png
+│      │  │  │      Square150x150Logo.scale-200.png
+│      │  │  │      Square150x150Logo.scale-400.png
+│      │  │  │      Square44x44Logo.altform-lightunplated_targetsize-16.png
+│      │  │  │      Square44x44Logo.altform-lightunplated_targetsize-24.png
+│      │  │  │      Square44x44Logo.altform-lightunplated_targetsize-256.png
+│      │  │  │      Square44x44Logo.altform-lightunplated_targetsize-32.png
+│      │  │  │      Square44x44Logo.altform-lightunplated_targetsize-48.png
+│      │  │  │      Square44x44Logo.altform-unplated_targetsize-16.png
+│      │  │  │      Square44x44Logo.altform-unplated_targetsize-256.png
+│      │  │  │      Square44x44Logo.altform-unplated_targetsize-32.png
+│      │  │  │      Square44x44Logo.altform-unplated_targetsize-48.png
+│      │  │  │      Square44x44Logo.scale-100.png
+│      │  │  │      Square44x44Logo.scale-125.png
+│      │  │  │      Square44x44Logo.scale-150.png
+│      │  │  │      Square44x44Logo.scale-200.png
+│      │  │  │      Square44x44Logo.scale-400.png
+│      │  │  │      Square44x44Logo.targetsize-16.png
+│      │  │  │      Square44x44Logo.targetsize-24.png
+│      │  │  │      Square44x44Logo.targetsize-24_altform-unplated.png
+│      │  │  │      Square44x44Logo.targetsize-256.png
+│      │  │  │      Square44x44Logo.targetsize-32.png
+│      │  │  │      Square44x44Logo.targetsize-48.png
+│      │  │  │      StoreLogo.scale-100.png
+│      │  │  │      StoreLogo.scale-125.png
+│      │  │  │      StoreLogo.scale-150.png
+│      │  │  │      StoreLogo.scale-200.png
+│      │  │  │      StoreLogo.scale-400.png
+│      │  │  │      Wide310x150Logo.scale-100.png
+│      │  │  │      Wide310x150Logo.scale-125.png
+│      │  │  │      Wide310x150Logo.scale-150.png
+│      │  │  │      Wide310x150Logo.scale-200.png
+│      │  │  │      Wide310x150Logo.scale-400.png
+│      │  │  │
+│      │  │  ├─entrypoint
+│      │  │  │      HoYoUWP.exe
+│      │  │  │
+│      │  │  ├─Properties
+│      │  │  │      Default.rd.xml
+│      │  │  │
+│      │  │  └─WinMetadata
+│      │  │          Windows.winmd
+│      │  │
+│      │  └─Core
+│      │          AppxManifest.xml
+│      │          HoYoUWP.exe
+│      │
+│      └─Release
+├─obj
+│  │  HoYoUWP.csproj.nuget.dgspec.json
+│  │  HoYoUWP.csproj.nuget.g.props
+│  │  HoYoUWP.csproj.nuget.g.targets
+│  │  project.assets.json
+│  │  project.nuget.cache
+│  │
+│  ├─x64
+│  │  └─Debug
+│  │      │  .NETCore,Version=v5.0.AssemblyAttributes.cs
+│  │      │  App.g.cs
+│  │      │  DesignTimeResolveAssemblyReferencesInput.cache
+│  │      │  HoYoUWP.csproj.AssemblyReference.cache
+│  │      │  XamlSaveStateFile.xml
+│  │      │
+│  │      ├─intermediatexaml
+│  │      └─TempPE
+│  └─x86
+│      └─Debug
+│          │  .NETCore,Version=v5.0.AssemblyAttributes.cs
+│          │  App.g.cs
+│          │  App.g.i.cs
+│          │  App.xaml
+│          │  App.xbf
+│          │  DesignTimeResolveAssemblyReferencesInput.cache
+│          │  excluded.layout.resfiles
+│          │  excluded.layout.resfiles.intermediate
+│          │  filtered.layout.resfiles
+│          │  filtered.layout.resfiles.intermediate
+│          │  HoYoUWP.csproj.AssemblyReference.cache
+│          │  HoYoUWP.csproj.CopyComplete
+│          │  HoYoUWP.csproj.CoreCompileInputs.cache
+│          │  HoYoUWP.csproj.FileListAbsolute.txt
+│          │  HoYoUWP.exe
+│          │  HoYoUWP.pdb
+│          │  HoYoUWP.xr.xml
+│          │  MainPage.g.cs
+│          │  MainPage.g.i.cs
+│          │  MainPage.xaml
+│          │  MainPage.xbf
+│          │  MultipleQualifiersPerDimensionFound.txt
+│          │  pri.resfiles
+│          │  pri.resfiles.intermediate
+│          │  priconfig.xml
+│          │  priconfig.xml.intermediate
+│          │  ProjectArchitectures.txt
+│          │  qualifiers.txt
+│          │  qualifiers.txt.intermediate
+│          │  ResourceHandlingTask.state
+│          │  resources.resfiles
+│          │  resources.resfiles.intermediate
+│          │  unfiltered.layout.resfiles
+│          │  unfiltered.layout.resfiles.intermediate
+│          │  XamlSaveStateFile.xml
+│          │  XamlTypeInfo.g.cs
+│          │
+│          ├─.winmd_cache
+│          │      $Microsoft.UI.Xaml.Markup.winmd_638316082480000000.json
+│          │
+│          ├─embed
+│          │      embed.resfiles
+│          │      embed.resfiles.intermediate
+│          │
+│          ├─intermediatexaml
+│          │      HoYoUWP.exe
+│          │      HoYoUWP.pdb
+│          │
+│          └─TempPE
+└─Properties
+        AssemblyInfo.cs
+        Default.rd.xml
+
+# 结语
+
 目前仍在开发，如果你对此工程感兴趣你也可以加入我的开发！万分感谢！
 
 最后，预祝上线时玩的开心:)
