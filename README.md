@@ -18,6 +18,9 @@ HoYo UWP ，给你更快乐的一站式哈游宇宙门户体验！
 
 ## 文档树
 
+
+```bash
+
 HoYoUWP
 │  .gitattributes
 │  .gitignore
@@ -257,6 +260,7 @@ HoYoUWP
 └─Properties
         AssemblyInfo.cs
         Default.rd.xml
+```
 
 # 结语
 
