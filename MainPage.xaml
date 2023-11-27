@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="HoYoUWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HoYoUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <NavigationView x:Name="ToolsBar" PaneDisplayMode="Left" IsBackButtonVisible="Collapsed" IsPaneOpen="False" IsSettingsVisible="True">
+            <!-- 菜单项 -->
+            <NavigationView.MenuItems>
+                <NavigationViewItem Icon="Home" Content="欢迎" Tag="home" IsSelected="True"/>
+                <NavigationViewItemHeader Content="米家游戏" />
+                <NavigationViewItem Icon="List" Content="原神，启动！" Tag="Genshin Impact" />
+                <NavigationViewItem Icon="List" Content="崩铁" Tag="Star Rail" />
+                <NavigationViewItem Icon="List" Content="崩坏2" Tag="Beng2" />
+                <NavigationViewItem Icon="List" Content="崩坏3" Tag="Beng3" />
+                <NavigationViewItemHeader Content="桌面动态壁纸" />
+                <NavigationViewItem Icon="List" Content="人 工 桌 面" Tag="RDsktop" />
+                <NavigationViewItemHeader Content="MiHoYo 与 HoYoVerse 账户首选项" />
+                <NavigationViewItem Icon="Contact" Content="账户信息" Tag="Account Info" />
+            </NavigationView.MenuItems>
+            <!-- 内容区域 -->
+            <Frame x:Name="ContentFrame" />
+        </NavigationView>
+    </Grid>
+</Page>
